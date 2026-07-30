@@ -4,15 +4,16 @@
 
 잘 다듬어진 추천서가 아니어도 괜찮습니다. 함께 일하며 기억에 남았던 장면, 고마웠던 점, 아쉬운 순간을 풀어낸 방식처럼 작은 경험 하나만 적어주세요. 한두 문장도 충분합니다.
 
-[✍️ 이야기 남기기](https://github.com/YoungJinJung/voiceofteam/edit/main/README.md)
+## 이야기 남기기
 
-## 남기는 방법
+### GitHub에서 바로 남기기
 
-1. 위의 **이야기 남기기**를 누릅니다.
-2. 아래 양식을 복사해 이 README의 맨 아래에 붙이고 내용을 작성합니다.
-3. `Propose changes`를 눌러 제출합니다.
+[🍴 저장소 Fork하기](https://github.com/YoungJinJung/voiceofteam/fork)
 
-이름이나 소속은 공개하고 싶은 범위까지만 적어주세요. 제출한 내용은 공개 저장소에 표시됩니다.
+1. 위의 **저장소 Fork하기**를 눌러 내 GitHub 계정에 복사합니다.
+2. 내 fork의 `README.md`에서 연필 아이콘을 누릅니다.
+3. 아래 양식을 복사해 README 맨 아래에 붙이고 내용을 작성한 뒤 커밋합니다.
+4. `Contribute` → `Open pull request`를 눌러 원본 저장소로 Pull Request를 보냅니다.
 
 ```md
 ---
@@ -23,6 +24,27 @@ _어떤 관계로 함께했는지 (선택)_
 
 기억에 남았던 경험이나 인상을 자유롭게 적어주세요.
 ```
+
+### AI Agent로 남기기
+
+처음 한 번만 GitHub CLI에 로그인하고 내 계정으로 fork해 내려받습니다.
+
+```sh
+gh auth login
+gh repo fork YoungJinJung/voiceofteam --clone
+cd voiceofteam
+```
+
+저장소 폴더에서 Codex 또는 Claude Code를 실행한 뒤 멘트를 입력합니다.
+
+```text
+Codex: $add-voice 홍길동입니다. 프로젝트 동료로 함께했고, 어려운 상황에서도 팀이 집중할 수 있게 정리해준 점이 기억에 남습니다.
+Claude: /add-voice 홍길동입니다. 프로젝트 동료로 함께했고, 어려운 상황에서도 팀이 집중할 수 있게 정리해준 점이 기억에 남습니다.
+```
+
+Agent가 README 수정, 내 fork의 브랜치 생성, 커밋, 원본 저장소로의 Pull Request 생성을 진행합니다.
+
+이름이나 소속은 공개하고 싶은 범위까지만 적어주세요. 제출한 내용은 공개 저장소에 표시됩니다.
 
 ## 함께한 이야기
 

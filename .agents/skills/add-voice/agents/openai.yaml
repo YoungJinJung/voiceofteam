@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Voice"
+  short_description: "개인 fork에 이야기를 추가하고 원본으로 PR을 생성합니다"
+  default_prompt: "Use $add-voice to add my message on a personal fork and open a pull request."
